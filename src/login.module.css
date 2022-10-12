@@ -1,15 +1,15 @@
 .Wrapper {
   height: 100%;
   width: 100%;
+  padding: 30px 60px;
+  box-sizing: border-box;
   background: url("./../public/background.png") no-repeat 100% 100%;
+  overflow: hidden;
   background-size: cover;
 }
 .loginWrapper {
   display: flex;
   height: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 30px 60px;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -140,5 +140,11 @@
   }
   100% {
     -webkit-transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .loginWrapper {
+    margin: 0 auto;
+    max-width: 1272px;
   }
 }
